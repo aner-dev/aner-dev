@@ -1,4 +1,4 @@
-# Leandro Etcheverry — Platform Engineer
+# Leandro Etcheverry — Kubernetes Engineer
 
 Kubernetes-first. I run a production-grade single-node Kubernetes homelab as
 proof of work: GitOps with Flux, Cilium everywhere, SOPS-sealed secrets, and
