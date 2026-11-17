@@ -1,8 +1,9 @@
 # Leandro Etcheverry — Kubernetes Engineer
 
-Kubernetes-first. I run a production-grade single-node Kubernetes homelab as
-proof of work: GitOps with Flux, Cilium everywhere, SOPS-sealed secrets, and
-CI on self-hosted Forgejo runners.
+Linux Enthusiast. 
+My main projects is **Athanor**: a single-node Kubernetes homelab
+managed through GitOps with FluxCD, Cilium as my CNI (eBPF), ESO (external-secrets operator) + Openbao & SOPS are the tools in which I based my secrets management infrastructure. 
+I run my own **CI** on self-hosted **Forgejo Actions runners**.
 
 ## What I do
 
@@ -13,9 +14,11 @@ CI on self-hosted Forgejo runners.
 - **Security** — SOPS-encrypted secrets, rotation runbooks, private CAs. The
   homelab history is public by design: ciphertext is public, keys never leave
   the vault
-- **Background** — Data Engineering (pipelines, AWS) turned platform full-time
+- **Agentic Software Engineering Projects**: I encounter with a lot of issues & limitations when integrating *agentic workflows* into my Kubernetes Cluster management. I think **Devops + Agentic programming** is in its early stages, even more primitive or less advanced than **SE**
+Thus, I come very frequently with the necessity of building my own solution for that specific problem I'm encountering with. Thus, as a result, I build these projects: [links to them] <- ??? 
+- **Background & Past Experience** — Data Engineering (ELT pipelines, AWS localstack project) turned platform full-time
 
-## Proof, not claims
+## Projects & Links
 
 - 🏠 Homelab (live repo, mirrored): https://github.com/aner-dev/athanor
 - 🌐 Portfolio — architecture, decisions, incidents, postmortems:
