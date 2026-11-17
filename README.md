@@ -1,9 +1,9 @@
 # Leandro Etcheverry — Kubernetes Engineer
 
-Linux Enthusiast. 
-My main projects is **Athanor**: a single-node Kubernetes homelab
-managed through GitOps with FluxCD, Cilium as my CNI (eBPF), ESO (external-secrets operator) + Openbao & SOPS are the tools in which I based my secrets management infrastructure. 
-I run my own **CI** on self-hosted **Forgejo Actions runners**.
+Linux enthusiast. My main project is **Athanor**: a single-node Kubernetes
+homelab managed with FluxCD GitOps, Cilium (eBPF) as CNI, and ESO + OpenBao
+for secrets (SOPS only for bootstrap).
+I run my own **CI on self-hosted Forgejo Actions runners**.
 
 ## What I do
 
@@ -11,12 +11,16 @@ I run my own **CI** on self-hosted **Forgejo Actions runners**.
   Kustomize overlays, Cilium network policies (default-deny, FQDN-aware egress)
 - **Platform** — self-hosted Forgejo + runners (CI on my own infra), container
   registry, observability (Prometheus/VictoriaMetrics, Grafana, Loki)
-- **Security** — SOPS-encrypted secrets, rotation runbooks, private CAs. The
-  homelab history is public by design: ciphertext is public, keys never leave
-  the vault
-- **Agentic Software Engineering Projects**: I encounter with a lot of issues & limitations when integrating *agentic workflows* into my Kubernetes Cluster management. I think **Devops + Agentic programming** is in its early stages, even more primitive or less advanced than **SE**
-Thus, I come very frequently with the necessity of building my own solution for that specific problem I'm encountering with. Thus, as a result, I build these projects: [links to them] <- ??? 
-- **Background & Past Experience** — Data Engineering (ELT pipelines, AWS localstack project) turned platform full-time
+- **Security** — OpenBao as source of truth, consumed via ESO
+  `ExternalSecret`s; rotation runbooks, private CAs. Secrets never land in
+  git — SOPS only covers bootstrap leftovers.
+- **Agentic engineering** — DevOps + agentic coding is still early, and
+  off-the-shelf tooling keeps falling short inside real clusters. So I build
+  my own: skills, harnesses and runbooks, validated against Athanor before
+  anything else.
+- **Background** — came from Data Engineering (ELT pipelines, Spark/Iceberg
+  lakehouse), now platform full-time. Past work stays linked below as context,
+  not direction.
 
 ## Projects & Links
 
